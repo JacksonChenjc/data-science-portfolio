@@ -1,0 +1,46 @@
+# 🧠 9417 Machine Learning Project — Robust Feedback Classification
+
+This project was developed as part of my Master of Data Science coursework at UNSW.  
+It focuses on **classifying customer feedback** into 28 categories using **machine learning (ML)** and **deep learning (DL)** models under **imbalanced and shifted data distributions**.
+
+---
+
+## 📌 Project Overview
+
+The goal of this project is to automatically classify customer feedback data, which has **imbalanced class distribution** and **shifted features**, into 28 meaningful categories.
+
+To address these challenges, several models were compared:
+- **Logistic Regression (LR)**
+- **Support Vector Machine (SVM)**
+- **Deep Neural Network (DNN)** with **Focal Loss**, **Dropout**, and **Early Stopping**
+
+The final model combined **Random Forest feature selection** with a **DNN architecture**, achieving the best performance.
+
+---
+
+## 🧩 My Contribution
+
+I was mainly responsible for the **RF + DNN hybrid model**, including:
+- Implementing **Focal Loss** to handle imbalanced labels  
+- Applying **feature importance–based selection (top 200 features)** from Random Forest  
+- Training and fine-tuning the **Deep Neural Network (PyTorch)**  
+- Generating evaluation metrics and visualizations (confusion matrix, classification report)  
+
+---
+
+## 📂 File Structure
+
+```bash
+project1_machine_learning/
+│
+├── README.md                         # Project summary
+├── report.pdf                         # Full academic report
+├── model_best.pth                     # Trained best model weights
+│
+├── train_dnn.py                       # Main DNN training script
+├── evaluate_dnn.py                    # Model evaluation
+├── loss_check.py                      # Cross-entropy and Focal loss comparison
+│
+├── confusion_matrix.png               # Confusion matrix visualization
+├── classification_report.png          # Model classification metrics
+└── label_shift_check.png              # Data distribution shift analysis
