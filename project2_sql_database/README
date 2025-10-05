@@ -1,0 +1,55 @@
+# 🧩 Academic Data Query System (COMP9311)
+
+**Tools:** SQL, PostgreSQL, PL/pgSQL  
+**Goal:** Build analytical SQL views and stored procedures for a university academic dataset to extract insights on students, courses, and staff.
+
+---
+
+## 📘 Overview
+This project was part of UNSW’s Database Systems course (COMP9311).  
+It focuses on designing complex SQL queries and stored functions to analyze relationships in an academic database containing students, courses, and staff data.
+
+The implementation includes:
+- **10 analytical views (Q1–Q8)** for academic statistics and comparisons  
+- **2 procedural functions (Q9–Q10)** using PL/pgSQL for dynamic query generation  
+
+---
+
+## 🧠 Key Features
+
+| Query | Description |
+|--------|--------------|
+| **Q1** | Find COMP-equivalent subjects offered by a specific school. |
+| **Q2** | Identify lab-based courses where all labs use unique rooms. |
+| **Q3** | Find students taught by professors across multiple semesters. |
+| **Q4** | Retrieve students enrolled in both a Major and a Research stream. |
+| **Q5** | Identify students scoring ≥98 in subjects outside their faculty. |
+| **Q6** | Compare schools by number of buildings used for teaching. |
+| **Q7** | Retrieve courses with the most facilities and related staff. |
+| **Q8** | Find students who graduated with a Bachelor but not Master (before 2012). |
+| **Q9** | Function: Return tutors’ info and employment duration for a given student. |
+| **Q10** | Function: Return students with average marks >85 for a given term and school. |
+
+---
+
+## ⚙️ Technical Highlights
+- Implemented **multi-join views** and **nested subqueries** for modular query logic  
+- Used **aggregation and HAVING** for analytical filtering  
+- Developed **PL/pgSQL functions** for dynamic querying  
+- Focused on **data modeling and relational integrity**
+
+---
+
+## 🪪 Key Learnings
+- Structured query design and optimization in relational databases  
+- Use of procedural logic within SQL (PL/pgSQL)  
+- Improved understanding of data relationships and academic record systems  
+
+---
+
+## 📁 Files
+
+| File | Description |
+|------|--------------|
+| `proj1_zid.sql` | Main SQL implementation (views + functions) |
+| `README.md` | Documentation for the project |
